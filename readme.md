@@ -4,7 +4,7 @@
 |-------------|-------------|
 | **Backend** | ✅ Création du projet au niveau backend (Django) |
 |             | ✅ Création entité Book |
-|             | ✅ Création API REST (Créer , Lister , Mise à jour) |
+|             | ✅ Création API REST (Créer , Lister , Mise à jour , Supprimer) |
     
 
 ---
