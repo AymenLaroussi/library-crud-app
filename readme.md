@@ -3,6 +3,9 @@
 | Composant   | Description |
 |-------------|-------------|
 | **Backend** | ✅ Création du projet au niveau backend (Django) |
+|             | ✅ Création entité Book |
+|             | ✅ Création API REST (Créer) |
+    
 
 ---
 ## ⚙️ Configuration
