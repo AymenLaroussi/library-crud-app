@@ -13,13 +13,9 @@ class retrieveBook(generics.ListAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
-class updateBook(generics.UpdateAPIView):
+class updateDeleteBook(generics.RetrieveUpdateDestroyAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
-    lookup_field = 'pk'
-
-class deleteBook(generics.DestroyAPIView):
-    queryset = Book.objects.all()
     lookup_field = 'pk'
 
     def destroy(self, request, *args, **kwargs):

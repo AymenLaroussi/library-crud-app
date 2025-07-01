@@ -22,8 +22,8 @@ python manage.py runserver
 ### CRUD API
 | HTTP | Endpoint | Action |
 |------|----------|--------|
-| **GET** | /api/books/ | Liste des livres |
-| **POST** | /api/books/ | Ajout d'un livre |
-| **PUT** | /api/books/{id}/ | Mettre à jour un livre |
-| **DELETE** | /api/books/{id}/delete/ | Supprimer un livre |
+| **GET** | /books | Liste des livres |
+| **POST** | /books | Ajout d'un livre |
+| **PUT** | /books/{id} | Mettre à jour un livre |
+| **DELETE** | /books/{id} | Supprimer un livre |
 
