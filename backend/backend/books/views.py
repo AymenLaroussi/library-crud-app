@@ -1,4 +1,3 @@
-# backend/books/views.py
 from rest_framework import generics
 from .models import Book
 from .serializers import BookSerializer
@@ -10,3 +9,8 @@ class createBook(generics.ListCreateAPIView):
 class retrieveBook(generics.ListAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+
+class updateBook(generics.UpdateAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+    lookup_field = 'pk'
