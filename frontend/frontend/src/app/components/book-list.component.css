@@ -32,7 +32,6 @@
   }
   
   .book-table {
-    width: 100%;
     border-collapse: collapse;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -72,7 +71,6 @@
     background-color: #303f9f;
   }
   
-  /* Modal */
   .modal {
     position: fixed;
     top: 0;
