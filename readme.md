@@ -16,6 +16,15 @@
 
 ---
 ## ⚙️ Configuration
+
+## 💡 Prérequis
+
+- Python 3.12.1
+- Node.js 16+ et npm
+- Angular CLI (`npm install -g @angular/cli`)
+- SQLite
+- Git
+
 ### 🛠️ Backend (Django)
 **Backend**
 ```bash
@@ -23,6 +32,8 @@ cd backend/backend
 python -m venv venv
 venv\Scripts\activate 
 pip install -r requirements.txt
+python manage.py makemigrations books
+python manage.py migrate 
 python manage.py runserver
 ```
 🔗 Accès à l’API : [http://127.0.0.1:8000/books](http://127.0.0.1:8000/books)
