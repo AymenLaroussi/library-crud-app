@@ -2,27 +2,32 @@
   <h2>Book List</h2>
   <button class="add-btn" (click)="openForm()">Add New Book</button>
   <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
-  <table class="book-table">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Year</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let book of books">
-        <td>{{ book.titre }}</td>
-        <td>{{ book.auteur }}</td>
-        <td>{{ book.annee  }}</td>
-        <td>
-          <button class="edit-btn" (click)="openForm(book)">Edit</button>
-          <button class="edit-btn" (click)="deleteBook(book.id)">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div *ngIf="books.length > 0; else noBooks">
+    <table class="book-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.titre }}</td>
+          <td>{{ book.auteur }}</td>
+          <td>{{ book.annee  }}</td>
+          <td>
+            <button class="edit-btn" (click)="openForm(book)">Edit</button>
+            <button class="edit-btn" (click)="deleteBook(book.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noBooks>
+    <p>No books available.</p>
+  </ng-template>
 
   <div class="modal" *ngIf="showForm">
     <div class="modal-content">
