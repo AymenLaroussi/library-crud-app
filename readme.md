@@ -5,7 +5,7 @@
 | **Backend** | ✅ Création du projet (Django) |
 |             | ✅ Création de entité **Book** |
 |             | ✅ Création API REST (Créer , Lister ,  Mettre à jour , Supprimer) |
-| **fFrontend** | ✅ Création du projet (Angular) |
+| **Frontend** | ✅ Création du projet (Angular) |
 |             | ✅ Création de entité **Book** |
 |             | ✅ Recevoir les APIs (Lister , Créer , Mettre à jour , Supprimer) |
 |             | ✅ Implmenter les interfaces (Liste , Formulaire (Reactive Forms)) |
