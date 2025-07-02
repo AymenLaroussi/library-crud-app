@@ -17,3 +17,4 @@ export class CorsInterceptor implements HttpInterceptor {
     });
     return next.handle(request);
   }
+}
