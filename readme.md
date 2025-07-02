@@ -5,6 +5,8 @@
 | **Backend** | ✅ Création du projet au niveau backend (Django) |
 |             | ✅ Création entité Book |
 |             | ✅ Création API REST (Créer , Lister , Mise à jour , Supprimer) |
+|-------------|-------------|
+| **frontend** | ✅ Création du projet au niveau frontend (Angular) |
 
 ---
 ## ⚙️ Configuration
@@ -27,3 +29,6 @@ python manage.py runserver
 | **PUT** | /books/{id} | Mettre à jour un livre |
 | **DELETE** | /books/{id} | Supprimer un livre |
 
+---
+### 🛠️ Frontend (Angular)
+**frontend**
