@@ -36,9 +36,9 @@ python manage.py makemigrations books
 python manage.py migrate 
 python manage.py runserver
 ```
-🔗 Accès à l’API : [http://127.0.0.1:8000/books](http://127.0.0.1:8000/books)
+🔗 Accès à la documentation Swagger : [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-**payload**
+**Payload**
 ```bash
 {
     "titre": "string",
