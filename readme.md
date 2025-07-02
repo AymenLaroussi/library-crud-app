@@ -2,15 +2,16 @@
 
 | Composant   | Description |
 |-------------|-------------|
-| **Backend** | ✅ Création du projet au niveau backend (Django) |
-|             | ✅ Création entité Book |
+| **Backend** | ✅ Création du projet (Django) |
+|             | ✅ Création de entité **Book** |
 |             | ✅ Création API REST (Créer , Lister ,  Mettre à jour , Supprimer) |
 |-------------|-------------|
-| **frontend** | ✅ Création du projet au niveau frontend (Angular) |
-|             | ✅ Création entité Book |
+| **frontend** | ✅ Création du projet (Angular) |
+|             | ✅ Création de entité **Book** |
 |             | ✅ Recevoir les APIs (Lister , Créer , Mettre à jour , Supprimer) |
-|             | ✅ Implmenter les interfaces (Liste , Formulaire (Reactive)) |
+|             | ✅ Implmenter les interfaces (Liste , Formulaire (Reactive Forms)) |
 |             | ✅ Test et validation |
+|             | ✅ Application du style (UI/UX) |
 
 
 ---
@@ -18,11 +19,21 @@
 ### 🛠️ Backend (Django)
 **Backend**
 ```bash
-cd backend
+cd backend/backend
 python -m venv venv
 venv\Scripts\activate 
 pip install -r requirements.txt
 python manage.py runserver
+```
+🔗 Accès à l’API : [http://127.0.0.1:8000/books](http://127.0.0.1:8000/books)
+
+**payload**
+```bash
+{
+    "titre": "string",
+    "auteur": "string",
+    "annee": number
+}
 ```
 
 ---
@@ -42,3 +53,4 @@ cd frontend/frontend
 npm install
 ng serve
 ```
+🔗 Accès à l’application : [http://127.0.0.1:4200](http://127.0.0.1:4200)

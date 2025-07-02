@@ -30,22 +30,22 @@
       <span class="close" (click)="closeForm()">&times;</span>
       <h3>{{ editBook ? 'Edit Book' : 'Add Book' }}</h3>
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <label>Titre</label>
-        <input formControlName="titre" type="text" />
+        <label for="title">Title</label>
+        <input formControlName="titre" type="text" id="title" />
         <div class="invalid-feedback" *ngIf="form.get('titre')?.invalid && (form.get('titre')?.dirty || form.get('titre')?.touched)">
           <span *ngIf="form.get('titre')?.errors?.['required']">Title is required.</span>
           <span *ngIf="form.get('titre')?.errors?.['minlength']">Title must be at least 2 characters.</span>
           <span *ngIf="form.get('titre')?.errors?.['pattern']">Title can only contain letters, numbers, and spaces.</span>
         </div>
-        <label>Auteur</label>
-        <input formControlName="auteur" type="text" />
+        <label for="author">Author</label>
+        <input formControlName="auteur" type="text" id="author" />
         <div class="invalid-feedback" *ngIf="form.get('auteur')?.invalid && (form.get('auteur')?.dirty || form.get('auteur')?.touched)">
           <span *ngIf="form.get('auteur')?.errors?.['required']">Author is required.</span>
           <span *ngIf="form.get('auteur')?.errors?.['minlength']">Author must be at least 2 characters.</span>
           <span *ngIf="form.get('auteur')?.errors?.['pattern']">Author can only contain letters, numbers, and spaces.</span>
         </div>
-        <label>Année</label>
-        <input formControlName="annee" type="number" />
+        <label for="year">Year</label>
+        <input formControlName="annee" type="number" id="year" />
         <div class="invalid-feedback" *ngIf="form.get('annee')?.invalid && (form.get('annee')?.dirty || form.get('annee')?.touched)">
           <span *ngIf="form.get('annee')?.errors?.['required']">Year is required.</span>
           <span *ngIf="form.get('annee')?.errors?.['min']">Year must be at least 1900.</span>
