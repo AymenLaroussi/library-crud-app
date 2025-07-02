@@ -32,14 +32,6 @@ export class BookFormPageComponent implements OnInit {
     });
   }
 
-  initForm(): void {
-    this.form = this.fb.group({
-      titre: ['', Validators.required],
-      auteur: ['', Validators.required],
-      annee: ['', [Validators.required, Validators.min(1900), Validators.max(new Date().getFullYear())]]
-    });
-  }
-
   loadBook(id: number): void {
     this.api.getBook(id).subscribe({
       next: (book: Book) => {
@@ -53,6 +45,14 @@ export class BookFormPageComponent implements OnInit {
         alert('Failed to load book data');
         this.router.navigate(['/']);
       }
+    });
+  }
+
+  initForm(): void {
+    this.form = this.fb.group({
+      titre: [''],
+      auteur: [''],
+      annee: ['']
     });
   }
 
