@@ -30,7 +30,8 @@
 ```bash
 cd backend/backend
 python -m venv venv
-venv\Scripts\activate 
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # macOS/Ubuntu
 pip install -r requirements.txt
 python manage.py makemigrations books
 python manage.py migrate 
