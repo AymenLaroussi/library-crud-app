@@ -19,6 +19,7 @@
         <td>{{ book.annee  }}</td>
         <td>
           <button class="edit-btn" (click)="openForm(book)">Edit</button>
+          <button class="edit-btn" (click)="deleteBook(book.id)">Delete</button>
         </td>
       </tr>
     </tbody>
