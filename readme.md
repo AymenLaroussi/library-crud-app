@@ -8,7 +8,7 @@
 |-------------|-------------|
 | **frontend** | ✅ Création du projet au niveau frontend (Angular) |
 |             | ✅ Création entité Book |
-|             | ✅ Recevoir les APIs (Lister , Créer) |
+|             | ✅ Recevoir les APIs (Lister , Créer , Mise à jour) |
 
 ---
 ## ⚙️ Configuration
