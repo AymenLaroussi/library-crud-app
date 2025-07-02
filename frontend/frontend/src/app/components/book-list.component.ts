@@ -13,9 +13,9 @@ export class BookListComponent implements OnInit {
   editBook: any = null;
   successMessage = '';
   form = this.fb.group({
-    titre: [''],
-    auteur: [''],
-    annee: ['']
+    titre: ['', Validators.required],
+    auteur: ['', Validators.required],
+    annee: ['', [Validators.required, Validators.min(1900), Validators.max(new Date().getFullYear())]]
   });
 
   constructor(private bookService: BookService, private fb: FormBuilder) {}

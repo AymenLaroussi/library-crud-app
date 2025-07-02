@@ -50,9 +50,9 @@ export class BookFormPageComponent implements OnInit {
 
   initForm(): void {
     this.form = this.fb.group({
-      titre: [''],
-      auteur: [''],
-      annee: ['']
+      titre: ['', Validators.required],
+      auteur: ['', Validators.required],
+      annee: ['', [Validators.required, Validators.min(1900), Validators.max(new Date().getFullYear())]]
     });
   }
 

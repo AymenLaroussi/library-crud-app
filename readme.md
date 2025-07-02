@@ -10,6 +10,7 @@
 |             | ✅ Création entité Book |
 |             | ✅ Recevoir les APIs (Lister , Créer , Mettre à jour , Supprimer) |
 |             | ✅ Implmenter les interfaces (Liste , Formulaire (Reactive)) |
+|             | ✅ Test et validation |
 
 
 ---
