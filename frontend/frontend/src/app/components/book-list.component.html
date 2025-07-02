@@ -14,8 +14,8 @@
       </thead>
       <tbody>
         <tr *ngFor="let book of books">
-          <td>{{ book.titre }}</td>
-          <td>{{ book.auteur }}</td>
+          <td>{{ book.titre | titlecase }}</td>
+          <td>{{ book.auteur | titlecase }}</td>
           <td>{{ book.annee  }}</td>
           <td>
             <button class="edit-btn" (click)="openForm(book)">Edit</button>
