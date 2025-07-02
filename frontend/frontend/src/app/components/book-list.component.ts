@@ -4,17 +4,18 @@ import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-book-list',
-  templateUrl: './book-list.component.html'
+  templateUrl: './book-list.component.html',
 })
 export class BookListComponent implements OnInit {
+  currentYear = new Date().getFullYear();
   books: any[] = [];
   isLoading = true;
   showForm = false;
   editBook: any = null;
   successMessage = '';
   form = this.fb.group({
-    titre: ['', Validators.required],
-    auteur: ['', Validators.required],
+    titre: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z0-9\s]+$/)]],
+    auteur: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z0-9\s]+$/)]],
     annee: ['', [Validators.required, Validators.min(1900), Validators.max(new Date().getFullYear())]]
   });
 
