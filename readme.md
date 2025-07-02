@@ -7,6 +7,7 @@
 |             | ✅ Création API REST (Créer , Lister , Mise à jour , Supprimer) |
 |-------------|-------------|
 | **frontend** | ✅ Création du projet au niveau frontend (Angular) |
+|             | ✅ Création entité Book |
 
 ---
 ## ⚙️ Configuration
@@ -30,5 +31,10 @@ python manage.py runserver
 | **DELETE** | /books/{id} | Supprimer un livre |
 
 ---
-### 🛠️ Frontend (Angular)
+### 🛠️ Frontend (Angular 16)
 **frontend**
+```bash
+cd frontend/frontend
+npm install
+ng serve
+```
