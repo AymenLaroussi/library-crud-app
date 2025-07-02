@@ -4,11 +4,13 @@
 |-------------|-------------|
 | **Backend** | ✅ Création du projet au niveau backend (Django) |
 |             | ✅ Création entité Book |
-|             | ✅ Création API REST (Créer , Lister , Mise à jour , Supprimer) |
+|             | ✅ Création API REST (Créer , Lister ,  Mettre à jour , Supprimer) |
 |-------------|-------------|
 | **frontend** | ✅ Création du projet au niveau frontend (Angular) |
 |             | ✅ Création entité Book |
-|             | ✅ Recevoir les APIs (Lister , Créer , Mise à jour , Supprimer) |
+|             | ✅ Recevoir les APIs (Lister , Créer , Mettre à jour , Supprimer) |
+|             | ✅ Implmenter les interfaces (Liste) |
+
 
 ---
 ## ⚙️ Configuration

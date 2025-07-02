@@ -1,0 +1,43 @@
+<!-- src/app/components/book-list/book-list.component.html -->
+<div class="container">
+  <h2>Book List</h2>
+  <button class="add-btn" (click)="openForm()">Add New Book</button>
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <table class="book-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.titre }}</td>
+        <td>{{ book.auteur }}</td>
+        <td>{{ book.annee  }}</td>
+        <td>
+          <button class="edit-btn" (click)="openForm(book)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Popup Form Modal -->
+  <div class="modal" *ngIf="showForm">
+    <div class="modal-content">
+      <span class="close" (click)="closeForm()">&times;</span>
+      <h3>{{ editBook ? 'Edit Book' : 'Add Book' }}</h3>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <label>Titre</label>
+        <input formControlName="titre" type="text" />
+        <label>Auteur</label>
+        <input formControlName="auteur" type="text" />
+        <label>Année</label>
+        <input formControlName="annee" type="number" />
+        <button type="submit" [disabled]="form.invalid" class="submit-btn">{{ editBook ? 'Update' : 'Add' }}</button>
+      </form>
+    </div>
+  </div>
+</div>
